@@ -4,11 +4,13 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaGithub,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -22,26 +24,24 @@ const Footer = () => {
                     <li className="menuItem">FAQ</li>
                 </ul>
                 <div className="infoText">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                   Made With Love ♥ || Shivam Singh 
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <FaFacebookF />
-                    </span>
+                    <a href="https://www.instagram.com/shivam.29_/">
                     <span className="icon">
                         <FaInstagram />
-                    </span>
+                    </span></a>
+
+                    <a href="https://github.com/29shivam">
                     <span className="icon">
-                        <FaTwitter />
-                    </span>
+                        <FaGithub />
+                    </span></a>
+
+
+                    <a href="https://www.linkedin.com/in/29shivam/">
                     <span className="icon">
                         <FaLinkedin />
-                    </span>
+                    </span></a>
                 </div>
             </ContentWrapper>
         </footer>
